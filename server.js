@@ -16,7 +16,8 @@ const port = 4000
 //middleware
 app.use(express.json())
 app.use(cors({
-   origin: `https://fooddelivery-yumrunfront-main.onrender.com`
+   origin: `*`,
+   optionsSuccessStatus: 200
 }))
 
 // DB Connection
