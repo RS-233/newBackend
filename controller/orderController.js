@@ -10,7 +10,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const placeOrder = async (req,res) => {
 
 
-    const frontend_url = `https://yum-runfront.vercel.app/`
+    const frontend_url = `https://https://fooddelivery-yumrunfront-main.onrender.com/`
 
     try {
         const newOrder = new orderModel({
