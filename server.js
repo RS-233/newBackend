@@ -12,10 +12,13 @@ import orderRouter from "./routes/orderRoute.js"
 //app config
 const app = express()
 const port = process.env.PORT || 4000;
-
+const corsOptions = {
+    origin: 'https://fooddelivery-yumrunfront-main.onrender.com',
+    optionsSuccessStatus: 200,
+};
 //middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsOptions))
 
 // DB Connection
 connectDB();
