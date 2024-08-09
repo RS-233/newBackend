@@ -13,7 +13,7 @@ import orderRouter from "./routes/orderRoute.js"
 const app = express()
 const port = process.env.PORT || 4000;
 const corsOptions = {
-    origin: ['https://fooddelivery-yumrunfront-main.onrender.com', `https://newbackend-xdwz.onrender.com`],
+    origin: ['https://fooddelivery-yumrunfront-main.onrender.com', `http://localhost:5173`],
     optionsSuccessStatus: 200,
 };
 //middleware
